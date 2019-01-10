@@ -2,15 +2,20 @@
 
 
 cd `dirname ${BASH_SOURCE[0]}`
-OPENVPN_DIR="`pwd`/ca_manager/openvpn"
+. common.def
+
+if [[ $# -lt 2 ]]; then
+    echo "usage: $0 ca_name common_name"
+    exit 1
+fi
 
 ca_name=$1
 common_name=$2
 
 CA_DIR="$OPENVPN_DIR/$ca_name"
 if [[ ! -d $CA_DIR ]]; then
-   echo "no dir $CA_DIR" 
-   exit 2
+   echo "no dir $CA_DIR"
+   exit 1
 fi
 
 cd $CA_DIR/easy-rsa

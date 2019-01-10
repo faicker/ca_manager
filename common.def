@@ -1,0 +1,3 @@
+
+TPL_DIR="`pwd`/openvpn_template"
+OPENVPN_DIR="`pwd`/openvpn"

@@ -5,7 +5,7 @@ topology subnet
 ca ca.crt
 cert __SERVER_NAME__.crt
 key __SERVER_NAME__.key
-dh dh1024.pem
+dh dh.pem
 server 10.255.0.0 255.255.255.0
 ifconfig-pool-persist ipp.txt
 #push "route 10.4.0.0 255.255.0.0"
