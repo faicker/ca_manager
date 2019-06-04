@@ -9,9 +9,9 @@ dh dh.pem
 server 10.255.0.0 255.255.255.0
 ifconfig-pool-persist ipp.txt
 #push "route 10.4.0.0 255.255.0.0"
-client-config-dir ccd
+client-config-dir /etc/openvpn/ccd
 duplicate-cn
-keepalive 10 60
+keepalive 5 15
 tls-auth ta.key 0
 comp-lzo
 persist-key

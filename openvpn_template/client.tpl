@@ -11,6 +11,6 @@ resolv-retry 3
 nobind
 persist-key
 persist-tun
-verb 4
-status /var/log/openvpn___NAME__.log
+verb 3
+status /var/log/openvpn_status____NAME__.log
 log-append /var/log/openvpn___NAME__.log

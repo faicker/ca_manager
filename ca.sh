@@ -5,7 +5,7 @@ cd `dirname ${BASH_SOURCE[0]}`
 
 ca_name=$1
 
-if [[ -z $ca_name ]]; then
+if [[ -z $ca_name || $ca_name == "-h" || $ca_name == "--help" ]]; then
     echo "usage: $0 ca_name"
     exit 1
 fi
