@@ -31,6 +31,9 @@ fi
 mkdir -p $SERVER_DIR
 
 # ca related
+if [[ ! -f $CA_DIR/easy-rsa/keys/index.txt.attr ]]; then
+    touch $CA_DIR/easy-rsa/keys/index.txt.attr
+fi
 cd $CA_DIR/easy-rsa
 if [[ ! -f keys/dh.pem ]]; then
     echo "error, no dh.pem"

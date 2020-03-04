@@ -38,5 +38,5 @@ revoke.sh ca_name common_name
 ```
 
 ## Notes:
-1. depend on openssl and openvpn
+1. depend on openssl, openvpn and zip
 2. The client/server cert/key generated base on the same CA, can be mixed.

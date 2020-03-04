@@ -1,3 +1,8 @@
 
 TPL_DIR="`pwd`/openvpn_template"
 OPENVPN_DIR="`pwd`/openvpn"
+
+#bad fix
+if [[ ! -f ~/.rnd ]]; then
+   dd if=/dev/urandom of=~/.rnd bs=256 count=1
+fi
