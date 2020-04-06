@@ -13,7 +13,6 @@ client-config-dir /etc/openvpn/ccd
 duplicate-cn
 keepalive 5 15
 tls-auth ta.key 0
-comp-lzo
 persist-key
 persist-tun
 status /var/log/openvpn_status___SERVER_NAME__.log
